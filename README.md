@@ -17,6 +17,7 @@ Program to implement the Random Forest Algorithm to predict daily temperature , 
 Developed by:MENAKA M S
 RegisterNumber: 212225040232
 */
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -53,8 +54,10 @@ model = RandomForestClassifier(
     criterion='gini',
     random_state=42
 )
+
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
+
 print("\nModel Evaluation:")
 print("Accuracy Score:")
 print(accuracy_score(y_test, y_pred))
@@ -62,10 +65,12 @@ print("\nConfusion Matrix:")
 print(confusion_matrix(y_test, y_pred))
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
+
 importance = pd.DataFrame({
     "Feature": X.columns,
     "Importance": model.feature_importances_
 })
+
 print("\nFeature Importance:")
 print(importance)
 plt.figure(figsize=(8,6))
@@ -73,6 +78,7 @@ plt.bar(
     importance["Feature"],
     importance["Importance"]
 )
+
 plt.xlabel("Features")
 plt.ylabel("Importance")
 plt.title("Feature Importance in Random Forest")
@@ -81,6 +87,7 @@ plt.show()
 weather_data = [[29, 72, 13]]
 prediction = model.predict(weather_data)
 print("\nCustom Weather Prediction:")
+
 if prediction[0] == 1:
     print("Predicted Weather: Sunny")
 else:
