@@ -1,15 +1,11 @@
 # Implementation of Random Forest Algorithm for Weather Prediction
 ## AIM:
 To write a program to predict daily temperature , PM2.5 pollution level and Energy based on environmental sensor data using Random Forest Algorithm.
-
 ## Problem Statement and Dataset
-
-
 
 ## Equipments Required:
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
-
 ## Algorithm
 1.Collect and Prepare Data:Gather employee data such as experience, age, education, and position. Clean the dataset and split it into input features (X) and target salary values (Y).
 2.Split the Dataset:Divide the dataset into training data and testing data using train-test split methods.
@@ -135,3 +131,4 @@ else:
 <img width="672" height="760" alt="image" src="https://github.com/user-attachments/assets/4fa44528-b95f-4757-bfec-1cc23500bf89" />
 <img width="250" height="57" alt="image" src="https://github.com/user-attachments/assets/17f15a55-b41d-46f6-8261-5f9882f9450f" />
 ## Result:
+Succesfully,the program is to predict daily temperature , PM2.5 pollution level and Energy based on environmental sensor data using Random Forest Algorithm.
