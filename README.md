@@ -86,7 +86,9 @@ if prediction[0] == 1:
     print("Predicted Weather: Sunny")
 else:
     print("Predicted Weather: Rainy")
+
 ```
+
 ## Output:
 <img width="481" height="363" alt="image" src="https://github.com/user-attachments/assets/70546dd5-8d1a-44a9-96d9-4b7f0022967f" />
 <img width="672" height="760" alt="image" src="https://github.com/user-attachments/assets/4fa44528-b95f-4757-bfec-1cc23500bf89" />
